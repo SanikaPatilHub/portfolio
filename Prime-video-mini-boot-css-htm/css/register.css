@@ -1,0 +1,50 @@
+#box1
+{
+  
+   background-color:white;
+   text-align: left;
+   top: 20px;
+   text-align: left;
+   margin-top: 10px;
+   margin-left: 30%;
+   margin-right: 30%;
+   margin-bottom: 4%;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 40px;
+   padding-right: 40px;
+   border: 40px;
+   width: 40%;
+   justify-content: center;
+   bottom: 0%;
+   align-items: center;
+  border-radius: 20px;
+   position: fixed;
+}
+body{
+    background-image:url(../img/movie.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 80vh;
+      background-size:cover;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+}
+#one
+{
+    bottom:20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgb(255, 0, 0);
+    font-weight: 200 bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+}
+#col-12{
+    text-align: center;
+  padding: 10px 20px;
+  background: rgb(0, 26, 255);
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
