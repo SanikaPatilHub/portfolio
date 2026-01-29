@@ -3,11 +3,19 @@
 const hamburger = document.getElementById("hamburger");
 const menuList = document.getElementById("menuList");
 
+
+
+
 // toggle menu on hamburger click
 hamburger.addEventListener("click", () => {
   menuList.classList.toggle("active");
   hamburger.classList.toggle("open");
 });
+
+
+
+
+
 
 // close menu when any link is clicked
 document.querySelectorAll("#menuList a").forEach(link => {
@@ -16,6 +24,9 @@ document.querySelectorAll("#menuList a").forEach(link => {
     hamburger.classList.remove("open");
   });
 });
+
+
+
 
 // emailjs
 document.getElementById("contact-form").addEventListener("submit", function (e) {
