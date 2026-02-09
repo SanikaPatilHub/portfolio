@@ -267,15 +267,12 @@ p {
 }
 
 .skills-row {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 25px;
-  flex-wrap: wrap;
 }
 
 .skill-box {
-  flex: 1;
-  min-width: 200px;
   background: #1e293b;
   padding: 30px 20px;
   border-radius: 18px;
