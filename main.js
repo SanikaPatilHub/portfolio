@@ -48,20 +48,31 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
 
 
 
+const toggleBtn = document.getElementById("themeToggle");
+const themeIcon = document.getElementById("themeIcon");
 
-document.addEventListener("DOMContentLoaded", () => {
-  const toggleBtn = document.getElementById("themeToggle");
+// Load saved theme
+if (localStorage.getItem("theme") === "light") {
+  document.body.classList.add("light");
+  themeIcon.classList.replace("fa-moon", "fa-sun");
+}
 
-  toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("light");
+// Toggle theme
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("light");
 
-    if (document.body.classList.contains()) {
-      toggleBtn.textContent = "🌙 Dark";
-    } else {
-      toggleBtn.textContent = "☀️ Light ";
-    }
-  });
+  if (document.body.classList.contains("light")) {
+    themeIcon.classList.replace("fa-moon", "fa-sun");
+    localStorage.setItem("theme", "light");
+   
+  } else {
+    themeIcon.classList.replace("fa-sun", "fa-moon");
+    localStorage.setItem("theme", "dark");
+ 
+     
+  }
 });
+
 
 
 

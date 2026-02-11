@@ -301,6 +301,42 @@ p {
   font-size: 0.95rem;
   color: #cbd5f5;
 }
+/* ========================= */
+/* Tablet View (992px and below) */
+/* ========================= */
+@media (max-width: 992px) {
+  .skills-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* ========================= */
+/* Mobile View (600px and below) */
+/* ========================= */
+@media (max-width: 600px) {
+  .skills-row {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .skill-box {
+    padding: 25px 15px;
+  }
+
+  .skill-box h3 {
+    font-size: 1.2rem;
+  }
+
+  .skill-box p {
+    font-size: 0.9rem;
+  }
+
+  .skill-box img {
+    width: 40px;
+  }
+}
+
 .project_heading {
   margin: 15px 0;
   color: #00fff2;
@@ -1178,7 +1214,7 @@ p {
 }
 /* ================= LIGHT MODE ONLY ================= */
 body.light {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   color: black;
 }
 
@@ -1191,7 +1227,7 @@ body.light .project-section,
 body.light .my_section5,
 body.light .footer,
 body.light .copy {
-  background: white !important;
+  background:rgb(255, 255, 255)!important;
 }
 
 /* Text colors */
@@ -1205,27 +1241,27 @@ body.light .left,
 body.light .heading,
 body.light .section-title,
 body.light .about {
-  color: black !important;
+  color: rgb(15, 14, 14) !important;
 }
 
 /* Aqua highlights */
 body.light span,
 body.light .project_heading,
 body.light .skill-box h3 {
-  color: rgb(101, 253, 0) !important;
+  color: rgb(0, 0, 0) !important;
 }
 
 /* Cards & boxes */
 body.light .skill-box,
 body.light .project-card,
 body.light .form_section {
-  background: #f4f4f4 !important;
-  box-shadow: 0 0 10px rgba(0, 255, 242, 0.4);
+  background: #ada4a4 !important;
+  /* box-shadow: 0 0 10px rgba(0, 255, 242, 0.4); */
 }
 
 /* Navbar links */
 body.light nav ul li a {
-  color: black !important;
+  color: rgb(3, 40, 41) !important;
 }
 
 body.light nav ul li a:hover {
@@ -1234,11 +1270,14 @@ body.light nav ul li a:hover {
 #themeToggle{
   height: 30px;
   width: 30px;
-  border-radius: 50%;
-  background-color: #3f7280;
-  border-style: double;
+ color:rgb(10, 10, 10);
+ border-radius: 50%;
+ background-color: none;
+ cursor: pointer;
 }
 
 body.light #footer-media li a{
-  background-color:black;
+
+  color:black;
+  background-color:rgb(29, 27, 27);
 }
